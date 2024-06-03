@@ -1,0 +1,23 @@
+public class Main {
+  public static void main(String[] args) {
+    // Criando objeto gato do tipo Animal
+    Animal gato = new Animal("\n Gato", 48, 4, "Preto e Branco", "Terra", 0.5);
+    System.out.println("\n Animal: " + gato.getNome() + ", Comprimento: " + gato.getComprimento() +
+        " cm, Patas: " + gato.getPatas() + ", Cor: " + gato.getCor() +
+        ", Ambiente: " + gato.getAmbiente() + ", Velocidade: " + gato.getVelocidade() + " m/s");
+
+    // Criando objeto camelo do tipo Mamifero
+    Mamifero camelo = new Mamifero("\n Camelo", 150, 4, "Amarelo", "Terra", 2.0, "leite");
+    System.out.println("\n Mamifero: " + camelo.getNome() + ", Comprimento: " + camelo.getComprimento() +
+        " cm, Patas: " + camelo.getPatas() + ", Cor: " + camelo.getCor() +
+        ", Ambiente: " + camelo.getAmbiente() + ", Velocidade: " + camelo.getVelocidade() +
+        " m/s, Alimento: " + camelo.getAlimento());
+
+    // Criando objeto tubarao do tipo Peixe
+    Peixe tubarao = new Peixe("\n Tilapia", 20, 0, "Cinzento", "Água", 1.5, "Nadadeiras longas");
+    System.out.println("\n Peixe: " + tubarao.getNome() + ", Comprimento: " + tubarao.getComprimento() +
+        " cm, Patas: " + tubarao.getPatas() + ", Cor: " + tubarao.getCor() +
+        ", Ambiente: " + tubarao.getAmbiente() + ", Velocidade: " + tubarao.getVelocidade() +
+        " m/s, Caracteristica: " + tubarao.getCaracteristica());
+  }
+}
